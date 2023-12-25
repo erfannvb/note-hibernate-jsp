@@ -21,3 +21,11 @@ x
 Hsrc/main/java/org/example/notehibernatejsp/base/service/BaseService.java,6\f\6fc2fc7e7174627f728beed91876681d5fec4ac4
 Å
 Qsrc/main/java/org/example/notehibernatejsp/base/service/impl/BaseServiceImpl.java,a\1\a1444a20cd3eb6daff79dce206ad758d368009ac
+y
+Isrc/main/java/org/example/notehibernatejsp/repository/NoteRepository.java,0\5\05ab89130af4e9731d1237bdd8bdfdec3d39c02a
+Ç
+Rsrc/main/java/org/example/notehibernatejsp/repository/impl/NoteRepositoryImpl.java,d\9\d90d18fbc5be685bd67ecf98915d1bdbeaf53a76
+s
+Csrc/main/java/org/example/notehibernatejsp/service/NoteService.java,3\0\3055b04561cd51192ee7b6a0edb31cc294607301
+|
+Lsrc/main/java/org/example/notehibernatejsp/service/impl/NoteServiceImpl.java,0\9\09bd090f92c8521f679695b031a177f43b622842
