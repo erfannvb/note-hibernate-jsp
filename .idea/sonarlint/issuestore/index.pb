@@ -31,5 +31,7 @@ Csrc/main/java/org/example/notehibernatejsp/service/NoteService.java,3\0\3055b0
 Lsrc/main/java/org/example/notehibernatejsp/service/impl/NoteServiceImpl.java,0\9\09bd090f92c8521f679695b031a177f43b622842
 J
 src/main/webapp/navbar.jsp,a\7\a7ba207bfa74ca8b935b52012e2659693fd94e87
-M
-src/main/webapp/css/style.css,2\c\2c1f525046eaa5ad3e39cc3d3b2f4c4fab4ff318
+K
+src/main/webapp/addNote.jsp,0\b\0b0d882dd298e78f9d5205a71735c871f99987ac
+v
+Fsrc/main/java/org/example/notehibernatejsp/servlet/AddNoteServlet.java,1\2\12a76fa3b29ed1b835cd178165e575a859505128
