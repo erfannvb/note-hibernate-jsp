@@ -40,7 +40,6 @@ public class UpdateNoteServlet extends HttpServlet {
             String content = req.getParameter("content");
 
             Optional<Note> optionalNote = noteService.findById(id);
-
             if (optionalNote.isPresent()) {
                 Note currentNote = optionalNote.get();
 

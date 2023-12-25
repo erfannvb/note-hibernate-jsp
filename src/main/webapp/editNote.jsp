@@ -38,7 +38,7 @@
             if (optionalNote.isPresent()) {
                 Note currentNote = optionalNote.get();
                 request.setAttribute("currentNote", currentNote);
-            }else {
+            } else {
                 System.out.println("Not Found!");
             }
 
