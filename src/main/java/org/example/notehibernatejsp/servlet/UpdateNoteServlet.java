@@ -53,7 +53,6 @@ public class UpdateNoteServlet extends HttpServlet {
             } else {
                 System.out.println("Not Found!");
             }
-
         } catch (Exception e) {
             e.getStackTrace();
         }
