@@ -26,6 +26,7 @@
 
     <%
         try {
+
             long id = Long.parseLong(request.getParameter("id"));
 
             Session s = HibernateUtil.getSessionFactory().openSession();
@@ -37,7 +38,10 @@
             if (optionalNote.isPresent()) {
                 Note currentNote = optionalNote.get();
                 request.setAttribute("currentNote", currentNote);
+            }else {
+                System.out.println("Not Found!");
             }
+
         } catch (Exception e) {
             e.getStackTrace();
         }

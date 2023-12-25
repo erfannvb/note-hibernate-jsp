@@ -51,6 +51,8 @@ public class UpdateNoteServlet extends HttpServlet {
                 noteService.update(currentNote);
 
                 resp.sendRedirect("/allNotes.jsp");
+            } else {
+                System.out.println("Not Found!");
             }
 
         } catch (Exception e) {
