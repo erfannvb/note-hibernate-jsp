@@ -7,4 +7,8 @@ public interface NoteService extends BaseService<Long, Note> {
 
     void addNote(Note note);
 
+    Note getNoteById(Long id);
+
+    void deleteNoteById(Long id);
+
 }
