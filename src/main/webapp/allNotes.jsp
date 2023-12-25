@@ -3,6 +3,11 @@
 <%@ page import="org.hibernate.query.Query" %>
 <%@ page import="org.example.notehibernatejsp.entity.Note" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.example.notehibernatejsp.repository.NoteRepository" %>
+<%@ page import="org.example.notehibernatejsp.repository.impl.NoteRepositoryImpl" %>
+<%@ page import="org.example.notehibernatejsp.service.NoteService" %>
+<%@ page import="org.example.notehibernatejsp.service.impl.NoteServiceImpl" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
@@ -23,10 +28,15 @@
 
     <%
         try {
+
             Session s = HibernateUtil.getSessionFactory().openSession();
-            Query<Note> noteQuery = s.createQuery("from Note order by id asc", Note.class);
-            List<Note> noteList = noteQuery.getResultList();
+
+            NoteRepository noteRepository = new NoteRepositoryImpl(s);
+            NoteService noteService = new NoteServiceImpl(s, noteRepository);
+
+            List<Note> noteList = new ArrayList<>(noteService.findAll());
             request.setAttribute("noteList", noteList);
+
         } catch (Exception e) {
             e.getStackTrace();
         }
