@@ -6,6 +6,7 @@
 <%@ page import="org.example.notehibernatejsp.repository.impl.NoteRepositoryImpl" %>
 <%@ page import="org.example.notehibernatejsp.service.NoteService" %>
 <%@ page import="org.example.notehibernatejsp.service.impl.NoteServiceImpl" %>
+<%@ page import="java.util.Optional" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -26,11 +27,17 @@
     <%
         try {
             long id = Long.parseLong(request.getParameter("id"));
+
             Session s = HibernateUtil.getSessionFactory().openSession();
+
             NoteRepository noteRepository = new NoteRepositoryImpl(s);
             NoteService noteService = new NoteServiceImpl(s, noteRepository);
-            Note currentNote = noteService.getNoteById(id);
-            request.setAttribute("currentNote", currentNote);
+
+            Optional<Note> optionalNote = noteService.findById(id);
+            if (optionalNote.isPresent()) {
+                Note currentNote = optionalNote.get();
+                request.setAttribute("currentNote", currentNote);
+            }
         } catch (Exception e) {
             e.getStackTrace();
         }
