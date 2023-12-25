@@ -28,7 +28,7 @@
                       placeholder="Enter your content..." required></textarea>
         </div>
         <div class="container text-center">
-            <button type="submit" class="btn btn-outline-primary w-50">Add</button>
+            <button type="submit" class="btn btn-success w-50">Add</button>
         </div>
     </form>
 </div>
