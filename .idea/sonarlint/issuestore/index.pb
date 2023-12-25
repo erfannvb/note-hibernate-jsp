@@ -29,3 +29,7 @@ s
 Csrc/main/java/org/example/notehibernatejsp/service/NoteService.java,3\0\3055b04561cd51192ee7b6a0edb31cc294607301
 |
 Lsrc/main/java/org/example/notehibernatejsp/service/impl/NoteServiceImpl.java,0\9\09bd090f92c8521f679695b031a177f43b622842
+J
+src/main/webapp/navbar.jsp,a\7\a7ba207bfa74ca8b935b52012e2659693fd94e87
+M
+src/main/webapp/css/style.css,2\c\2c1f525046eaa5ad3e39cc3d3b2f4c4fab4ff318
