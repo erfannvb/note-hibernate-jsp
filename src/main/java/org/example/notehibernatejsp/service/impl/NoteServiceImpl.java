@@ -14,4 +14,11 @@ public class NoteServiceImpl extends BaseServiceImpl<Long, Note, NoteRepository>
         super(session, repository);
         this.session = session;
     }
+
+    @Override
+    public void addNote(Note note) {
+        session.getTransaction().begin();
+        repository.save(note);
+        session.getTransaction().commit();
+    }
 }
