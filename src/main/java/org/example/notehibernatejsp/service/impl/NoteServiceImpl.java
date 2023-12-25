@@ -24,12 +24,4 @@ public class NoteServiceImpl extends BaseServiceImpl<Long, Note, NoteRepository>
         repository.save(note);
         session.getTransaction().commit();
     }
-
-    @Override
-    public void deleteNoteById(Long id) {
-        session.getTransaction().begin();
-        Optional<Note> currentNote = repository.findById(id);
-        currentNote.ifPresent(repository::remove);
-        session.getTransaction().commit();
-    }
 }

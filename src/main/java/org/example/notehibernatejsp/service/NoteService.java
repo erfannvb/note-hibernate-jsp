@@ -7,6 +7,4 @@ public interface NoteService extends BaseService<Long, Note> {
 
     void addNote(Note note);
 
-    void deleteNoteById(Long id);
-
 }
