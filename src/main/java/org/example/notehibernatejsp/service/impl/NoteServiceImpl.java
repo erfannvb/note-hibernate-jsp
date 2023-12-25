@@ -26,14 +26,6 @@ public class NoteServiceImpl extends BaseServiceImpl<Long, Note, NoteRepository>
     }
 
     @Override
-    public Note getNoteById(Long id) {
-        String hql = "from Note where id =: id";
-        Query<Note> noteQuery = session.createQuery(hql, Note.class);
-        noteQuery.setParameter("id", id);
-        return noteQuery.getSingleResult();
-    }
-
-    @Override
     public void deleteNoteById(Long id) {
         session.getTransaction().begin();
         Optional<Note> currentNote = repository.findById(id);
