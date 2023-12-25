@@ -35,3 +35,13 @@ K
 src/main/webapp/addNote.jsp,0\b\0b0d882dd298e78f9d5205a71735c871f99987ac
 v
 Fsrc/main/java/org/example/notehibernatejsp/servlet/AddNoteServlet.java,1\2\12a76fa3b29ed1b835cd178165e575a859505128
+L
+src/main/webapp/allNotes.jsp,8\9\899474a7a88ccb96ac960a44162c22513b981483
+w
+Gsrc/main/java/org/example/notehibernatejsp/servlet/EditNoteServlet.java,1\4\142f499ef0a41338f6b8aebe4ca35ecbd2a5b7ee
+y
+Isrc/main/java/org/example/notehibernatejsp/servlet/DeleteNoteServlet.java,e\e\ee46548e9dd04fa5295b3ea0f44b004e03d05701
+L
+src/main/webapp/editNote.jsp,a\e\aebf8e54b66a036a639fffc4dc466844df7ffc2b
+y
+Isrc/main/java/org/example/notehibernatejsp/servlet/UpdateNoteServlet.java,2\5\25a75adaa1a3a55a290902fa33b35a6e707a5a71

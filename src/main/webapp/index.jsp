@@ -13,8 +13,22 @@
 <div class="container">
     <jsp:include page="navbar.jsp"/>
     <br>
-    <h1>This is home page.</h1>
+
+    <div class="card">
+        <img src="img/notes.png" alt="Notes" class="img-fluid mx-auto py-5" style="max-width: 200px">
+        <h1 class="text-primary text-center mt-4">Start Taking your Notes</h1>
+        <div class="container text-center">
+            <button id="startBtn" class="btn btn-outline-primary mt-4 mb-4 w-50">Start Here</button>
+        </div>
+    </div>
+
 </div>
+
+<script>
+    document.getElementById("startBtn").addEventListener("click", () => {
+        window.location.href = "/addNote.jsp";
+    })
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
