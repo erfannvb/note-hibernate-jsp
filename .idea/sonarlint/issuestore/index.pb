@@ -7,3 +7,17 @@ I
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+k
+;src/main/java/org/example/notehibernatejsp/entity/Note.java,8\2\82c9714dd7d0e2b212ed9ac77e0ea8fc981270bf
+v
+Fsrc/main/java/org/example/notehibernatejsp/base/entity/BaseEntity.java,0\9\09cc9a10e6d2f0e0432ec4076e340b2354388081
+~
+Nsrc/main/java/org/example/notehibernatejsp/base/repository/BaseRepository.java,0\6\06d201c0cce253dac6972b564a85ae0fe9868375
+Ç
+Rsrc/main/java/org/example/notehibernatejsp/base/repository/util/HibernateUtil.java,7\4\74f322f788abfa593750b921d65ff88bd00a734c
+á
+Wsrc/main/java/org/example/notehibernatejsp/base/repository/impl/BaseRepositoryImpl.java,c\9\c98d2f02b8c204ea9de5c6c8718bb5d86f0b2151
+x
+Hsrc/main/java/org/example/notehibernatejsp/base/service/BaseService.java,6\f\6fc2fc7e7174627f728beed91876681d5fec4ac4
+Å
+Qsrc/main/java/org/example/notehibernatejsp/base/service/impl/BaseServiceImpl.java,a\1\a1444a20cd3eb6daff79dce206ad758d368009ac
