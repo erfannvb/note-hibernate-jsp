@@ -15,6 +15,7 @@ import org.hibernate.Session;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.Optional;
 
 @WebServlet(name = "UpdateNoteServlet", urlPatterns = "/updateNote")
 public class UpdateNoteServlet extends HttpServlet {
@@ -38,15 +39,19 @@ public class UpdateNoteServlet extends HttpServlet {
             String title = req.getParameter("title");
             String content = req.getParameter("content");
 
-            Note currentNote = noteService.getNoteById(id);
+            Optional<Note> optionalNote = noteService.findById(id);
 
-            currentNote.setTitle(title);
-            currentNote.setContent(content);
-            currentNote.setCreatedDate(new Date());
+            if (optionalNote.isPresent()) {
+                Note currentNote = optionalNote.get();
 
-            noteService.update(currentNote);
+                currentNote.setTitle(title);
+                currentNote.setContent(content);
+                currentNote.setCreatedDate(new Date());
 
-            resp.sendRedirect("/allNotes.jsp");
+                noteService.update(currentNote);
+
+                resp.sendRedirect("/allNotes.jsp");
+            }
 
         } catch (Exception e) {
             e.getStackTrace();
