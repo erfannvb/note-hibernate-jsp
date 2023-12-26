@@ -1,7 +1,6 @@
 <%@ page import="org.hibernate.Session" %>
 <%@ page import="org.example.notehibernatejsp.base.repository.util.HibernateUtil" %>
 <%@ page import="org.example.notehibernatejsp.entity.Note" %>
-<%@ page import="org.hibernate.query.Query" %>
 <%@ page import="org.example.notehibernatejsp.repository.NoteRepository" %>
 <%@ page import="org.example.notehibernatejsp.repository.impl.NoteRepositoryImpl" %>
 <%@ page import="org.example.notehibernatejsp.service.NoteService" %>
